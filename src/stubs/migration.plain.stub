@@ -1,0 +1,22 @@
+<?php
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Zara\Database\DatabaseInterface;
+use Zara\Database\Migrations\Migration;
+use Zara\Database\Schema\Schema;
+use Zara\Database\Schema\Blueprint;
+
+final class {{ class }} extends Migration
+{
+    public function up(DatabaseInterface $db, Schema $schema): void
+    {
+        //
+    }
+
+    public function down(DatabaseInterface $db, Schema $schema): void
+    {
+        //
+    }
+}

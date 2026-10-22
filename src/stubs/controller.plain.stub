@@ -1,0 +1,26 @@
+<?php
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Zara\View\Interfaces\ViewInterface;
+use Zara\Core\Routing\Interfaces\RouterInterface;
+use Zara\Controller\AbstractController;
+use Zara\Core\Http\Interfaces\ResponseInterface;
+use Zara\Core\Http\Interfaces\RequestInterface;
+use Zara\Core\Http\Response;
+use Zara\Core\Http\Request;
+
+final class {{ class }} extends AbstractController
+{   
+    public function __construct(
+        private ViewInterface $view,
+        private RouterInterface $router,
+    ) {
+        parent::__construct($view, $router);
+    }
+    public function index(RequestInterface $request): ResponseInterface
+    {
+        //
+    }
+}
